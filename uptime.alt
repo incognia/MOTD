@@ -1,2 +1,0 @@
-#!/bin/sh
-echo "Address: $(dig +short myip.opendns.com @resolver1.opendns.com) | \033[0;36mProcesses: $(ps -e |wc -l)\033[0m | \033[0;35mUsers: $(who |wc -l)\033[0m | \033[0;33m$(uptime --pretty| awk '{gsub(/up/,"Uptime:"); print}')\033[0m"
